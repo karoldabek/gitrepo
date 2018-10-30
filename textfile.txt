@@ -1,0 +1,24 @@
+Lokalizacja-pliku 
+
+    URL( Uniform Resource Locator)
+    
+    
+    
+    Adresy lokalne
+        ./index.html
+        
+        . -bierzące katalogi
+        .. -katalog nadrzędny(większa szufladka w której jest mniejsza szufladka)
+        
+        / -katalog główny w systemach linuksowych
+        C:\ -katalog główny w systemie Windows
+        D:\
+        E:\
+        
+        
+        
+        
+        /home - katalog domowy z profilu użytkowników 
+        /home/kl1ag1 -katalog domowy, oznaczany jast znakiem cd (tyldy)
+        
+        /home/kl1ag1/gitrepo/public_html/listy.html

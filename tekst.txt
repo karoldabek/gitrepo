@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-09-11T13:08:04+02:00
+
+====== notes ======
+Created wtorek 11 września 2018
+Ecg.vot.pl -informacje
+**Terminator**: 
+git clone (link) - klonowanie repozytorium do katalogu lokalnego.
+ 
+cd gitrepo
+
+git status 
