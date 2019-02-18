@@ -30,6 +30,14 @@ def dziel(a, b):
     else:
         print('Błąd dzielenia przez 0')
     return False
+    
+    
+def sinus(stopien):
+    if -1 < stopien < 361:
+        return sin(stopien * pi / 180)
+        print("Błędny zakres stopni")
+    return False
+
 
 def main(args):
     pokaz_liste()
@@ -57,7 +65,9 @@ def main(args):
         elif d == '!':
             pass
         elif d == 'sin':
-            pass
+            a = pobierz_liczbe('Podaj kąt w stopniach: ')
+            if not isinstance(a, (bool)):
+                print('sin({}) = {}'.format(a, sinus(a)))
         elif d == 'cos':
             pass
         elif d == 'l':

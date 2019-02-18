@@ -17,6 +17,11 @@ def potega_it(a, n):
         wynik = wynik * a
     return wynik
 
+def potega_rek(a, n):
+    # a^n = a^(n-1) * a
+    if n == 0:
+        return 1
+    return potega_rek(n - 1) * a
 
 
 def main(args):
