@@ -27,5 +27,18 @@ aby zrobić komętarz :
     terminator -e "/bin/sh %c"
     
     
-
+zbuduj / zdefinuj polecenie budowania
 g++ -Wall -o "%e.exe" "%f"
+
+
+error: expected intializer before - warto popatrzeć linijke wyżej czy dałam średnik
+
+
+error: expected '}' at end of input   - brakuje tego czegoś w tym czymś bardzo czyelne to jest 
+
+
+to musi mieć otwarci i zamknięcie :  ""  ''  ()  {}  []
+
+
+
+

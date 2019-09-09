@@ -16,4 +16,3 @@ int main(int argc, char **argv)
     cout << "Podałeś: " << liczba1;
 	return 0;
 }
-
