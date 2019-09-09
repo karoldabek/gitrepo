@@ -1,0 +1,31 @@
+int - liczby całkowiete 
+float - liczba 
+'' - pojedyńcz liczba
+"" - ciąg znaków
+każda instrókcja kończy się średnikiem
+cin - strumień wejścia
+
+wyjście jet po lewej wejście po prawej     operator pobierania (cin << ) w lewo operwator 
+>>
+cout <<  - aby coś wydrukować 
+>>
+kompilacja F8 lub zbuduj / compile 
+
+warning: Unsed vari coś tam nie trzeba się vtym przejmowac 
+
+plik obiektowy rozszerzenie ".oerror : om match for aperator
+
+linkowanie F9, Zbadaj / build
+
+urochomienie F5  zbuduj / wykonaj 
+
+aby zrobić komętarz :
+    /*  */    
+    
+    
+    Preferencje / Narzędzia / Terminal:
+    terminator -e "/bin/sh %c"
+    
+    
+
+g++ -Wall -o "%e.exe" "%f"
