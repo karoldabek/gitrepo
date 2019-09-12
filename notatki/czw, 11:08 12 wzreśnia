@@ -1,0 +1,26 @@
+Specyfikacja argorytmu:
+1) zadanie
+2)częścia określenie danych wejściowe i ich typów 
+3)właściwy algorytm
+4)dane wyjściowe i ich typy/postać 
+
+*algorytm nazywamy skończony ciąg czynności, przekształcający zbiór 
+ danych wejściowych na zbiór danych wyjściowych 
+
+etapy kontorolowania algorytmu:
+1)...
+7)testowanie rozwiązania dla różnych danych-
+algorytmy powinny być uniwaersalne, tzn. działać
+dla różnych zastosowań
+8) 
+
+
+etapy schematy blokowego:
+-blok graniczny  -  początek algorytmu(takie jajo)
+-blok operacyjny  (prostokąt)
+-blok wejściowy/wyjściowy  (rónoległobok)
+-blok decyzyjny (warzne) 
+-blok graniczny 
+
+
+
