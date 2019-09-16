@@ -1,0 +1,32 @@
+standarodowa pętla to for(;;)   średniki oddzieleją sekcje 
+1)pierwsza sekcja zawiera poczatkową watrość ile razy się pętla wykona    for(int i = 0;;)
+2)warunek
+3)trzecia sekcja mówi co sie dziej z sekcją 
+
+To się dziej w trzeciej sekcji
+i++ inkrementacja zmiennej, tj powiększenie 1
+i-- - deklaracja, tj pomniejszenie zmniennej 1
+  zamiast i = i + 2    można 1 =+ 2
+
+
+cout << 1 << endl;   wylicz   naprzykład Hello
+                                         Hello  i tak dalej zależy ile podaliśmy
+                                         
+                                         
+for(int i = 0;i < 10; i--)    pętla nieskończona   błąd                 powinno być for(int i = 0;i > -10; i--)
+
+
+
+
+powtużenie 
+for i in   dla każdego i w
+
+range(10) wygeneruje 10 liczb
+
+
+error: "i" was not declared in this scope   -   maszynka nie wim co to jest i bo nie jest to podane i on nie wie co to jest 
+
+
+    int i;    deklaracja   i bez tego po prosty odrazu deklaracja i inicvjacja
+    i = 0     inicjacja ale jajczęściej bez tego jest bo tak prościej
+    int i = 0;      delkaracja i inicjacja = definicja 
