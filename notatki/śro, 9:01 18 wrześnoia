@@ -1,0 +1,27 @@
+https://getbootstrap.com/docs/4.3/examples/ polecam wejść w jakiś tam folder i nacisnąć  ctrl + u
+
+
+padding-top  - wypełnienie, otaczanie treści   (model pudełkowy)
+
+
+jednostki:
+ 1) em - ja chce by było to mniejsze od jednostki rodzica
+ 2) rem  - każdy dokyment ma root początek
+
+
+overflow - decyduje o tym co się ma stać jeśli zawartość danego elementu wykracza poza jego rozmiar(dodaje paski po bokach dzięki którym można to  	przewimąć)
+
+
+d9577d  kolory
+ffffff
+
+
+
+<span>2A</span>
+<small>- klasa informatyczna</small>
+     tak to wtedy wygląda na stronie =   2A - klasa informatyczna
+     																	(2A jest na stronie większe od klasy informatycznej)
+
+
+
+czcaj w domu tu-->  https://www.w3schools.com/bootstrap4/bootstrap_typography.asp
