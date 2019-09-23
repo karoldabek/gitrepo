@@ -1,6 +1,6 @@
 /*
  * trojkat.cpp
- * napisz program który pobiera od użytkownika trzy liczby, 
+ * napisz program który pobiera od użytkownika trzy liczby,
  * długoiść boków i sprawdz czy da się z niech zrobić trójkąt
  * Copyright 2019 kl2ag1 <kl2ag1@ubu10>
  */
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
     if (a + b > c && a + c > b && b + c > a);{
         cout << "trójkąt <3" << endl;}
     else {cout << "nie trójkąt" ;}
-    
+
 	return 0;
 }
 

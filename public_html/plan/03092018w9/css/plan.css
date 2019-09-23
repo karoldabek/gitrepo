@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    color: #000000;
+    color: #00000;
     overflow: auto;
     margin: 0;
     padding-top: 0rem;
@@ -9,14 +9,15 @@ body {
 .tabtytul {
     /* tabelka z grafik¹ (nag³ówek) */
     background-color: #80c2ab;
-    border-bottom: 2px solid #808080
+    border-bottom: 2px solid #808080;
 }
 
 .tytul {
     /* komórka z tytu³em */
-    color: #8fb5e8;
-    padding-top: 2rem;
+    color: #003c2d;
     padding-left: 10px;
+    font-weight: bold;
+    font-size: 45px;
 }
 
 .tytulnapis {
@@ -33,19 +34,19 @@ body {
 }
 
 td {
-    background-color: #ffffff;
-    color: #8fb5e8;
+      background-color: #f0fffb;
+    color: #01130f;
 }
 
 
 a.n {
     /* nauczyciel */
-    color: #000099
+    color: #002b20
 }
 
 a.s {
     /* sala */
-    color: #000099
+    color: #f50b33
 }
 
 a.k {
@@ -55,7 +56,7 @@ a.k {
 
 .p {
     /* przedmiot */
-    color: #000000;
+    color: #00634b;
     font-weight: bold
 }
 
