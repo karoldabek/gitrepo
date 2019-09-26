@@ -8,3 +8,6 @@
         if(a+c>b)
             if(b+c>a) {
         cout << "Trójkąt";
+
+
+cw, 11:04
