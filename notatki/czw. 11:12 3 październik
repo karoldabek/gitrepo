@@ -1,0 +1,32 @@
+PROGRAMOWNAIE FUNKCYJNE
+
+np.   void sumuj() jest to funkcja nie zmienna 
+
+{}  ciało funkcji np. void sumuj(int a, int b) {}
+
+
+void - funkcja nic nie zwraca 
+
+void sumuj(int a, int b) {
+    ;
+}           pusta instrukcja
+
+
+
+
+programowanie proceduralne
+
+
+
+
+rzutowanie typu (ang. casting) - dynamiczna zmiana typu zmiennej
+(float)a
+np. (float)a/(float)b
+
+
+
+
+Jeśli jakaś funkja coś zwraca obowiązkowe jest by był return, nawet gdy nie musimy nic zwracać
+int pomnoz(int a, int b){
+    return;
+}
