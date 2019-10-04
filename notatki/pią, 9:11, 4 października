@@ -1,0 +1,7 @@
+wszystkie dane z pliku post.php wszystko jest przesyłane jako tekst nawet gdzy to jest licz więc możemy oczyszczać dane prze tekst
+
+
+wpisujemy w terminator
+http://localhost:8000/formularz.php
+
+hpmlspecialchars (?)
