@@ -1,0 +1,14 @@
+zasięŋ zmiennej 
+
+zmienne globalne odradza się urzywać ponieważ wprowadzją komplikacje: 
+jeśli kot jest rozbudowane to trudno ten kot znaleść.
+zmienne lokalne mogą przesłaniać zmienne globalne!
+
+void - funkcja nie zwraca, ale czy napewno... 
+
+przekazywanie argumentów przez wartość (by value)
+
+przekazywanie argumentów przez referencje (by reference)  &z
+
+
+void modyfikuj(int x, int y, int &z) { // to nie ma różnicy jeśli byśmy napisali: (int x, int y, int z) lub (int a, int b, int suma); ten znaczek &z to pomaga w czymś innym
