@@ -1,5 +1,6 @@
 /*
  * funkcje_zadania.cpp
+ * zadanie 1 z http://ecg.vot.pl/cpp-funkcje
  */
 
 
@@ -7,13 +8,14 @@
 
 using namespace std;
 
-int drukuj(int a, int b, int c) {
-    cout << "Pracujesz? Powątpiewam" << a << "ile lat i ile zarabiasz" << b << endl;
+void drukuj(int staz, int zarobek) {
+    if(staz==1)
+        cout << "Pracujesz? Powątpiewam" << staz << "ale skoro pracujesz to ile lat i ile zarabiasz" << zarobek << endl;
 }
 
-int awans(staz, &zarobek){
-    staz += 1;
-    zarobek
+void awans(int  lata){
+    int a;
+    for( a = 1; a <= lata; a++)
 }
 
 int main(int argc, char **argv)
