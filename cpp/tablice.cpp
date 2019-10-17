@@ -20,11 +20,16 @@ int main(int argc, char **argv)
     int i = 0;  //zawsze gdy są tablice są pętle bo nikomu się inaczej nie chce się bawić
     cout << "Podaj 20 liczb: " << endl;
     for (i=0; i<rozmiar; i++){
-        cin >> tablica[i];
+        cin >> tablica[i];  //zapisywanie danych
         }
-    for (i=0; i<rozmiar; i++){
-        cout << tablica[1] << " ";
+    for (i=0; i<rozmiar; i++){  //drukuje zawartość 
+        cout << tablica[i] << " ";
         }
+        
+    for (i=rozmiar-1; i>-1; i--){
+        cout << tablica[i] << " ";
+        }
+    
 	return 0;
 }
 
