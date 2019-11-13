@@ -25,4 +25,6 @@ else
 
 include_once(DINC.'template.php');
 
+// echo 'zap1WSX';  <- to jest troche marne bo jak ktoś nas to okradnie to będzie miał chasło więc tego sie nie powinno tak zapisywać
+// echo sha1('zap1WSX'); //sha1 - zmienia to na kompletnie inny ciąg liczb i dla kążdego hasła jest umikalny: np.c12632g24214353534c2137264512b7467234732g423432766 <- to jest to hasło po użyciu sha1
 ?>
