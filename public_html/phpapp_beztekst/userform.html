@@ -1,0 +1,40 @@
+<?php
+
+if (isset($_POST['login'])) {
+    global $db, $users;
+    foreach ($_POST as $k => $v){
+        ${$k} = clrtxt($v);
+        // print ${$k}."<br>";
+    }
+
+    $ok = true;
+    if ($users->is_login($login)){
+        $kom[] = "Podany login istnieje!";
+        $ok = false;
+    }
+
+    if ($users->is_email($email)){
+        $kom[] = "Podany email istnieje!";
+        $ok = false;
+    }
+    if (strlen($haslo) < 8){
+        $kom[] = "za krótkie hasło";
+        $ok = false;
+    }
+    if ($ok){
+        $user->login = $login;
+        $user->haslo = $haslo;
+        $user->email = $email;
+        print_r($user->dane);
+    }
+}
+?>
+
+<form action="?id=userfor" method="POST" name="dane" id="dane">
+    <input type="hidden" name="id_user" value="10">
+    <div class="form-group">
+        <label for="login">Wiadomość:</label>
+        <textarea name="wiadomosc" id="wiadomosc" class="form-control" rows="3"></textarea>
+    </div>
+    <input type="submit" value="Wyślij" class="btn btn-primary">
+</form>
