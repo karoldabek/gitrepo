@@ -1,0 +1,60 @@
+[29-Nov-2019 09:37:08 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Access to undeclared static property: Baza::$db in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/index.php(17): Baza->__construct('db/baza.db', Array)
+#1 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[29-Nov-2019 09:37:59 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:00 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:22 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:23 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:24 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: p in /home/kl2ag1/public_html/phpapp/inc/db.php on line 36
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:38:25 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:04 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:04 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:04 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:04 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:15 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:16 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:16 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:16 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:16 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:17 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:17 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:17 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
+[29-Nov-2019 09:39:17 Europe/Warsaw] PHP Notice:  Undefined variable: id in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 19
