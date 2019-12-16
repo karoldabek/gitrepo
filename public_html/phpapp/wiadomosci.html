@@ -31,9 +31,14 @@ foreach (Baza::$ret as $k => $t) {
     echo '<li>';
     echo $t['tresc'].' ('.$t['user'].', '.$t['data'].') ';
     echo '<a href="?id='.$strona['id'].'&akcja=del&idw='.$t['id'].'">Usuń »»»</a>';
+    echo ' <a href="?id='.$strona['id'].'&akcja=edt&idw='.$t['id'].'">Edytuj »»»</a>';
     echo '</li>';
 }
 echo '</ul>';
+
+if (isset($_GET['akcja'])) {
+    ;  // obsługa edycji
+}
 ?>
 
 <form action="?id=<?php echo $strona['id']; ?>" method="POST" name="dane" id="dane">

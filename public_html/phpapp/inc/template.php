@@ -17,26 +17,34 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-<?php get_menu($id); ?>
+<?php get_menu($db, $strona); ?>
             </ul>
         </div>
     </nav>
 
 <div class="jumbotron">
-  <h1><?php get_page_title($id); ?></h1>
+  <h1><?php get_page_title($strona); ?></h1>
   <p>Pierwsza aplikacja w PHP</p>
 </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                <?php
-                    get_page_content($id);
-                ?>
-                </div>
-                <div class="col"></div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+        <?php
+            get_page_content($strona);
+            get_koms(Baza::$kom);
+            get_koms($user->kom);
+            get_koms($kom);
+            if (isset($_COOKIE[$user->CookieName])) {
+                echo "<p>Ciasteczko: ".$_COOKIE[$user->CookieName]."</p>";
+            } else {
+                echo "<p>Brak ciasteczka.</p>";
+            }
+        ?>
         </div>
+        <div class="col"></div>
+    </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

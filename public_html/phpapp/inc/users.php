@@ -1,31 +1,68 @@
 <?php
+ini_set('session.save_path', 'sesje');
 
-class User{
+class User {
 
-	var $dane = array(); //aby sasugerowac właściwość var nie jest niezbędne ale sie przyjeło że sie stawia
+	var $dane = array();
 	var $keys = array('id', 'login', 'haslo', 'email', 'data');
+	var $CookieName = 'phpapp';
+	var $remTime = 7200;
+	var $kom = array();
 
-	function is_user($sid,$login=NULL,$haslo=NULL) {
+	function __construct() {
+		if (!isset($_SESSION)) session_start();
+		if (isset($_COOKIE[$this->CookieName]) && !$this->id) {
+			$c = unserialize(base64_decode($_COOKIE[$this->CookieName]));
+			$this->login($c['login'], $c['haslo'], false, true);
+			$this->kom[] = "Witaj {$this->login}! Zostałeś automatycznie zalogowany!";
+		}
+
+		if (!$this->id && isset($_POST['login2'])) {
+			foreach ($_POST as $k => $v) {
+        ${$k} = clrtxt($v);
+    	}
+    	$this->login($login2, $haslo2, true, true);
+		}
+
+	}
+
+	function login($login, $haslo, $rem=false, $load=true ) {
+		if ($load && $this->is_user($login, $haslo)) {
+			if ($rem) {
+				$c = base64_encode(serialize(array('login'=>$login, 'haslo'=>$haslo)));
+				$this->kom[] = $c;
+				$a = setcookie($this->CookieName, $c, time()+$this->remTime, '/', 'localhost', false, true);
+				if ($a) $this->kom[] = 'Zapisano ciasteczko.';
+				$this->kom[] = "Witaj $login! Zostałeś zalogowany.";
+				return true;
+			}
+		} else {
+			$this->kom[] = 'Błędny login lub hasło!';
+			return false;
+		}
+	}
+
+	function is_user($login=NULL, $haslo=NULL) {
 		if (!empty($login)) {
-			$qstr='SELECT * FROM users WHERE login = \''.$login.'\' AND haslo = \''.sha1($haslo).'\' LIMIT 1';
+				$q="SELECT * FROM users WHERE login='$login' AND haslo='".sha1($haslo)."' LIMIT 1";
 		} else return false;
 
-		$ret=array();
-		db_query($qstr,$ret);
-		if (!empty($ret[0])) {
-			$this->dane=array_merge($this->dane,$ret[0]);
+		Baza::db_query($q);
+		if (!empty(Baza::$ret[0])) {
+			$this->dane=array_merge($this->dane,Baza::$ret[0]);
 			$sid=sha1($this->id.$this->login.session_id());
-			$_SESSION[$this->uVal] = $sid; // zapis identyfikatora sesji
+			$_SESSION['sid'] = $sid; // zapis identyfikatora sesji
 			return true;
 		}
 		return false;
 	}
 
-	function __set($k, $v){
+	function __set($k, $v) {
 		$this->dane[$k] = $v;
 	}
-	function __get($k){
-		if (array_key_exists(&k, $this->dane))
+
+	function __get($k) {
+		if (array_key_exists($k, $this->dane))
 			return $this->dane[$k];
 		else
 			return null;
@@ -33,38 +70,28 @@ class User{
 
 	function is_login($login) {
 		$qstr='SELECT id FROM users WHERE login=\''.$login.'\' LIMIT 1';
-    if (db_query($qstr)) return true;
+    if (Baza::db_query($qstr)) return true;
     return false;
 	}
 
 	function is_email($email) {
 		$qstr='SELECT id FROM users WHERE email=\''.$email.'\' LIMIT 1';
-    if (db_query($qstr)) return true;
+    if (Baza::db_query($qstr)) return true;
     return false;
 	}
+
   function savtb() {//tab. asocjacyjna z kluczami: id#login#haslo#email#datad
 		if (strlen($this->haslo)<40) $this->haslo=sha1($this->haslo);
 		$this->llog=time();
 		if (!$this->id) {
 			$qstr='INSERT INTO users VALUES (NULL,\''.$this->login.'\',\''.$this->haslo.'\',\''.$this->email.'\',time())';
-			$ret=db_exec($qstr);
-			$id = db_lastInsertID();
+			Baza::db_exec($qstr);
+			// $id = db_lastInsertID();
 		}
-		if ($ret) return true;
+		if (Baza::$ret) return true;
 		return false;
 	}
+
 }
-
-	// $this->dane=array_merge($this->dane,$ret[0]); <- wyniki z tego są zapisywane w tym -.-
-	// $this - obiekt użytkownika i so tego obiektu używamy tego, konkretny obietk
-
-	// !empty - czy cokolwiek jest zapisane naprzykład w tym przypadku w &login
-
-	// http(s) // protoków bezstanowy nie pamięta o co się pytał protokul nie zapisuje putań
-	// pytanie - odpowiedz
-	// login,hasło -> serwer -> SESJA // tu se pamięć zapisuje o użytkowniku i se tam zapamiętuje
-	// serwer -> klient -> CIASTKO // klient to przeglądarka; mechanizm ciasteczek (ang. cookie) wszystkie powinny- są to pliki (ciasteczka youtube no ktoś coś o tym godo ale są tam też bzdury coś o śmieciach jak zablokujesz cookie ale tym się nie przejmujemy)
-	// ciasteczko jest to plik zapisywany po stronie klienta, zapisy danych użytkowników
-	// sesja jest to plik zapisywany po stronie serwera
 
 ?>
