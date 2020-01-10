@@ -8,13 +8,13 @@ ini_set('error_log', 'errorlog.txt');
 
 define('DINC', 'inc/');
 define('DBASE', 'db/');
-$dbfile  = DBASE.'baza.db';
+$dbfile = DBASE.'baza.db';
 $kom = array();
 require_once(DINC.'functions.php');
 require_once(DINC.'db.php');
 require_once(DINC.'users.php');
 
-$db = new Baza(DBASE.'baza.db', $kom);
+$db = new Baza($dbfile);
 $user = new User();
 
 if (isset($_GET['id']))
@@ -26,4 +26,7 @@ $strona = array();
 
 include_once(DINC.'template.php');
 
+// echo 'zaq1@WSX';
+// echo sha1('zaq1@WSX');
+// c380f833034d60bf035a134094eb538d600dc6f9
 ?>

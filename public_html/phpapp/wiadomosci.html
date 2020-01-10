@@ -1,10 +1,11 @@
 <?php
 
 if (isset($_POST['wiadomosc'])) {
+    global $user;
     foreach ($_POST as $k => $v) {
         ${$k} = clrtxt($v);
     }
-    $sql = "INSERT INTO posty (id, tresc, user) VALUES(NULL, '$wiadomosc', '$user')";
+    $sql = "INSERT INTO posty (id, tresc, user) VALUES(NULL, '$wiadomosc', $user)";
     Baza::db_exec($sql);
 }
 
@@ -27,11 +28,16 @@ Baza::db_query('SELECT * FROM posty');
 echo '<h3>Wiadomości</h3>';
 echo '<ul>';
 foreach (Baza::$ret as $k => $t) {
-    global $strona;
+    global $strona, $user;
+    Baza::db_query('SELECT login FROM users WHERE id='.$t['user']);
+    print_r(Baza::$ret);
     echo '<li>';
     echo $t['tresc'].' ('.$t['user'].', '.$t['data'].') ';
-    echo '<a href="?id='.$strona['id'].'&akcja=del&idw='.$t['id'].'">Usuń »»»</a>';
-    echo ' <a href="?id='.$strona['id'].'&akcja=edt&idw='.$t['id'].'">Edytuj »»»</a>';
+
+    if($t['user'] == $user->id) {
+        echo '<a href="?id='.$strona['id'].'&akcja=del&idw='.$t['id'].'">Usuń »»»</a>';
+        echo ' <a href="?id='.$strona['id'].'&akcja=edt&idw='.$t['id'].'">Edytuj »»»</a>';
+    }
     echo '</li>';
 }
 echo '</ul>';
@@ -39,6 +45,9 @@ echo '</ul>';
 if (isset($_GET['akcja'])) {
     ;  // obsługa edycji
 }
+
+global $user;
+if ($user->id) {
 ?>
 
 <form action="?id=<?php echo $strona['id']; ?>" method="POST" name="dane" id="dane">
@@ -53,3 +62,6 @@ if (isset($_GET['akcja'])) {
     </div>
     <input type="submit" value="Wyślij" class="btn btn-primary">
 </form>
+<?php
+}
+?>

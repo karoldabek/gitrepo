@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-<?php get_menu($db, $strona); ?>
+<?php get_menu($id, $strona); ?>
             </ul>
         </div>
     </nav>
@@ -28,22 +28,22 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col">
-        <?php
-            get_page_content($strona);
+	<div class="row">
+		<div class="col">
+		<?php
+			get_page_content($strona);
             get_koms(Baza::$kom);
-            get_koms($user->kom);
+            get_koms($user);
             get_koms($kom);
             if (isset($_COOKIE[$user->CookieName])) {
                 echo "<p>Ciasteczko: ".$_COOKIE[$user->CookieName]."</p>";
             } else {
                 echo "<p>Brak ciasteczka.</p>";
             }
-        ?>
-        </div>
-        <div class="col"></div>
-    </div>
+		?>
+		</div>
+		<div class="col"></div>
+	</div>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
