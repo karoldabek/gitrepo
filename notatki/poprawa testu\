@@ -1,0 +1,85 @@
+GET, POST  poctawa
+
+
+autoryzacaj- przyznanie komus uprawniń (jestes zalogowany i on może coś w tedy zrobić)
+
+kompilowane (C++, komilator, linker)
+
+interpreter (PHP, Python, Java Script) skrypty php java skrypt wszystko wykonywane pokolei
+
+odp
+
+-f
+bez f
+
+-do lokalnego wykonywania skryptów PHP potrzebny jest:
+interpreter
+
+-po stronie serwera WWW używamy:
+interpretera
+dedykowany moduł serwera
+
+-Aby wprowadzić dane tekstowe używamy:
+print()
+echo()
+echo
+
+-po stronie serwera ww kod PHP wykonywany jest w plikach:
+.php  (u nas jest .html a dzieła to bo jest on włanczany do php)
+
+-kod PHP powinien być ujęty w znaczniki:
+<?php>
+
+-dane które zminaija bazę dane przesyłamy z formularz za pomocą metody 
+POST
+
+-po stronie w 
+w tablicy $_POST
+
+- jeśli chcesz wyszukać w serwesie www JESTEŚ INFORMACJE, DANYCH PRZESSYŁAMY ZAZWYCZAJ
+GET 
+
+-walidacja(sprawdzanie poprawności danych, czy cos) danych z formularza polega na
+używanie odpowiednich 
+sprawdzanie po stronie serwera, czy dane
+
+-Java Scriptu można do ewalidacji danych:
+1
+po stronie klienta
+
+-sprawdzanie poprawności ;oginu i hasła to przkład:
+autentykacja ( czy ty jesteś tym za kogo się podajesz)
+walidacja(strawdzenie poprawności hasła i loginy)
+
+-do sprawdzeniu czy zmianna istnieje i nie jest wartością NULL
+isset()
+
+-Funkacja array_key_existe
+czy w tablicy znajduje isę podany klucz
+
+-do sprawdzenia czy zmianna nie istenieje i nei jest wartością False 
+empty (?)
+
+-zanazacz funkcję PHP
+strlen()
+htmlspecjal(coś tam)()
+trim()
+
+-do tworzenia 
+są tworzone w momencie pierwszego przypisania 
+
+-do twoerzenia nowych zmiannych 
+$($zmianne) = wartość
+${$k} - dynamiczne tworzenie zmiannych
+
+- aby wartość zmiannej znalazła sie ciągu
+'zmoienna:(coś tu jest(i tu))
+'zmianna: $ zmianne'
+
+-jeżeli 
+$_POST['kod']
+
+-foreach
+
+-Klasa::$dane[0]
+
