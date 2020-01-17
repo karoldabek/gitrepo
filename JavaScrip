@@ -1,0 +1,48 @@
+kozystałam ze strony https://js.do/
+https://js.do/code/393754   <- coś takiego było
+
+<script>
+// Edit your script here
+var a = 5;
+var b = 10;
+var c = a + b;
+console.log(c);
+document.write("<h1>"+c+"</h1>"); // drukuje wynik w okienku obok na stronie na której to robiliśmy
+window.alert(c); // drukuje w okienku wynik
+document.write('<p id="is"></p>')
+document.getElementByld("js").innerHML
+</script>
+<!-- edit your html here -->
+
+
+
+<script>
+// Edit your script here
+var a = parseInt(prompt('Podaj bok a: ')); // parseInt daje że to są liczby tero
+var b = parseInt(prompt('Podaj bok b: '));
+var c = parseInt(prompt('Podaj bok c: '));
+document.write(a + b + c);
+if (+b>c && a+c>b && b+c>a) {
+	window.alert('da się');
+}	else {
+		window.alert('Nie da się! Frajerze')
+}
+</script>
+<!-- edit your html here -->
+
+
+
+<script>
+// Edit your script here
+var dlugosc = 10; // liczba
+var imie = "Dorota"; //string- opis (?) znak wieloznakowy(?) chyba coś spiepszyłam
+var tablica=["Fiat","Skoda","Merc"];
+document.write(tablica[1]);
+var osoba = {  //obiekt przechowujący rozne rzeczy
+	imie:"Adam", 
+	nazwisko:"Sławek",
+    wiek: 25
+};
+document.write(osoba.imie, osoba.wiek);
+</script>
+<!-- edit your html here -->
