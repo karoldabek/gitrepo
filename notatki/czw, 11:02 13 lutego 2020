@@ -1,0 +1,49 @@
+kompresja danych (każda komunikacja światłowa telefonowa... wszystkie te żeczorki posadają to (informatycznycznych):
+polega na zmiejszeniu większości tego pliku i nie tylko tego pliku (zminiejszenie wielkości)
+
+są rózne jej rodzaje :
+
+1) KOMPRESJA BEZSTRONNA:
+można odzystakć rzeczy(można rozpakować z archiwóm i niec nie stracimy), np usuneliś,my plik ale 
+był ona już umieszczony w archiwum i możemy go odzyskac taki jaki był
+bezstrat
+
+utwórz archowum:
+(takie mieliśmy wybory)           /
+ZIP - powrzechny, najstarszy      /we wszystklich została użyta
+7z - darmowy i dobry oraz spoko   /kompresja bezzstronna
+XZ - i coś tam                    /
+rar - też 
+
+
+1 bit & 8 = 1 B(ajt)
+1111111(2) = 127(10) ogramiczenie kodu aski
+11111111(2) = 255(10) (ile umikalnych stamów = liczk)
+UFT - 8 = 2 bajty
+
+producenci dysków twardych przyjmują: 1000B = 1kB
+z praktyki: 256GB SSD <- może i tak ma ale my tego nie widzimy my widzimy -> 240GB bo oni używają innych przeliczmików
+
+1024 b(ity)
+1024 B(ajty) = 1 kB
+bajty -> wielkośc; plik nie mówmy że zajmuje ileś na czas tylko poprostu zajmuje jakieś miejsce
+1024 b -> bity to jednostyka przepustowości; przepustowość pytamy się o łacze innternetowe ile może przesłać w 1s, najczęsciej używa sie to w tym mówi się 
+
+1024 kb = 1 Mb
+1024 kB = 1 MB
+1024 MB = 1 GB
+1024 GB = 1 TB (tera bałt)
+
+w zwykłym pliku gdy bierzemy właściwości nie pokazuje mam sumy plików z tymi ukrytymi
+można je sprawdzic przez termonal : du - s katalok któty chcemy
+a gdy dopiszemy do s h czyli -> du -sh plik <- to zobaczymy w kB
+
+# WSPÓŁCZYNNIK KOMPRESJI
+Rc = Vk / Vnk * 100%
+wspólczynnik kompresji = dane skomresowane / dane nie skompresowane * 100% 
+-dzięki temu możemy sprawdzić o ile procent to się zmieniło (kompresja powód)
+np. Vnk = 784 kB
+Vk = 110, 2 kB  <- Vnk i Vk te same jednostki
+Rc = 110.2 / 784 * 100% = 14% <- tyle mniej zajmuje
+
+Rc = (1 - Vk/Vnk) * 100%
