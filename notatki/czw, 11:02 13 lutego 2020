@@ -40,7 +40,7 @@ a gdy dopiszemy do s h czyli -> du -sh plik <- to zobaczymy w kB
 
 # WSPÓŁCZYNNIK KOMPRESJI
 Rc = Vk / Vnk * 100%
-wspólczynnik kompresji = dane skomresowane / dane nie skompresowane * 100% 
+wspólczynnik kompresji = dane skompresowane / dane nie skompresowane * 100% 
 -dzięki temu możemy sprawdzić o ile procent to się zmieniło (kompresja powód)
 np. Vnk = 784 kB
 Vk = 110, 2 kB  <- Vnk i Vk te same jednostki
