@@ -47,3 +47,35 @@ Vk = 110, 2 kB  <- Vnk i Vk te same jednostki
 Rc = 110.2 / 784 * 100% = 14% <- tyle mniej zajmuje
 
 Rc = (1 - Vk/Vnk) * 100%
+
+
+
+*KOMPRESJA BEZSTRONNA*
+zastosowanie- tekst, kod programowy. ostatni etap a alg. komprsji stronnej
+współczynnik kompresji: zazwyczaj <= 4
+metody dla ciągów "Losowych": kodowanie Huffmana, kodowanie arytmetyczny, i in.
+standarty: gzip, zip, 
+
+Kodownaie słownikowe
+
+Plik : kompresja_przeliczenie.txt posaiada 49 bajtów, a jak wiemy liczy się to jak wszystkie te literki ze spacjami a dodatkowy
+jeden bajt bo w kodzie aski zawsze się pojawia LP takie coś smiesznego na końcu czego nie widzimy (chyba że wejdziemy w widok i wybierzemy pokaż znaki końcowe) a prz o kazji warto nadmienić
+że pisaliśmy zdanie w angielskim bo te literki były tak lliczone łatwo i fajnie lalalal
+*po czasie ten plik kompresja_przeliczenie.txt zmieniła się liczba bajtów bo cos tam zmienialiśmy*
+ 
+ 
+kompresja sstratna:  zdjęcia, dzwięk... 
+
+KOdowanie :
+    kodowanie o stałej długości:
+    każde słowo kodowe ma tę samą długość (alfabet brałna?)
+    
+    kodowanie o zmiennej długości: (alfabet morsa)
+    słowa kodowania mogą mieć różne długości
+    
+    kompresja JPG - rózne stopnie kompresji JPG oryginału o objętości 47 bajtów <- obrazek chłopca zmienia się w minecrafta
+    
+    
+    
+POSKRIPT JEST STANDARTEM MIĘDZY DRUKARKĄ A KOMPUTEREM (W TYM SIE DRUKUJE)
+    kompresja JPG - rózne stopnie kompresji JPG oryginału o objętości 47 bajtów <- obrazek chłopca zmienia się w minecrafta

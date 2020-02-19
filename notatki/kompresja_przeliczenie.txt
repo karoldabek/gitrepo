@@ -1,0 +1,18 @@
+The rain in Spain falls mainly on the plain.
+The rain <3, 3>Sp<9, 4>falls m<11, 3>ly on <34, 3>pl<15, 3>.
+44 bajty
+44 - 15 + 5 = 34 <- 15 to tyle zaoszczędziliśmy, a 5 to ile zajmue kompresja 
+więc bardziej to liczymy: 44 - 10
+34/44 * 100% = 77%
+<x, y> <- x to droga, a y to ile idzie tą drogą
+<6, 2> = 1 bajt
+32 16 8 4 2 1 ,- potęgi dwójek
+34 <- aby to zapisać potrzeba 6 bitów
+
+1111(2) = F(16)
+
+Moją pasją są kompresje i ich komputerowe wersje.  <- zakładamy, że ą, ę to 2 bajty, a reszta 1 bajt i nie liczymy LF (53 bajty zapisane na dysku)
+
+Moją pas<5, 3> s<3, 2> kompre<12, 2>e i ich <13, 4>uterowe <2, 2>rs<23, 2>.
+52 bajty
+52 - 43 + 6
