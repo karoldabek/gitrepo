@@ -1,0 +1,65 @@
+SIEĆ
+nowy dział
+
+Sprzęt jaki jest potrzebny?
+-jakas tam karta sieciowa (NIC- Network Interface Caro)
+-LAN (lokalne sieci komputerowe, ang. local area network) [one tam sie łączą i tam się różnią; miejskie, rozległe] {Lan<-domowy, Man<-miejskie, Wan<-naprzykład polska}
+Wszysstkie sieci się łączą i jest se internet
+Czym jest internet?:
+w sensie technicznym jest to taki król sieci. Ogłono swietowy (... coś tam dalej z wikipedi)
+
+Interfejs sieciowy (karta siecowa tak, modne ostatnie interwejs sieciowy<- dowolny wygląd aby było)
+Wi-Fi <- jakieś coś
+
+Trza coś oznaczyć aby się wyróżniało (Karty siecowe o to chodzi)
+*Adres MAC <- jest to numer zapisany w liczbach szesnastkowych
+jeżeli ma interfejs siecowy to ma w telefonie
+jest uażny i przydatny
+pierwsze literki i cyferki są to dane twórcy, a potem coś unikalne
+
+*Prywatne adresy IP <- rozpoznaje się po liczbach rozpoznawając coś tam
+IPv4 (ten protokuł w wersji 4 [jeszcze obowiązuje]) <- on zdecydował że 24 bitu bendą oznaczac komputer(?)
+x.x.x.x.
+255.255.255.255 <- tyle znacz te x (?)
+10.0.0.0 - 10.255.255.255  <- dużo kombinaczi dziesiądka nie ulega zmianie czyli od 0-255
+177.16.00 - 172.31.255.255
+* najczęściej używane przywatny-> 192.168.0.0 - 192.168.255.255
+
+adres publiczny zaczyna sie tylko od 192, a reszta jest prywatna(przykłady na górze)
+192.168.3.20 <- numer komputera to ta dwudziestka
+*Domyślna Brama - taka trasa która nas prowadzi mozemy przez nią przejść i kontaktowac się z światem
+
+*Router!!!!!!!! <- najwarzniejsza żecz nie jest niezbędny do ktowrzenia sieci lokalnych
+wszystkie rutery mają dwie rzeczy wspulne interwejs prywatny(? zgubiłam się)
+interwejs lokalny
+Sprawdz konfiguracje swojej sieci
+strona WhatisMyIP.com
+ślad adresu ajpi zawsze jest zostawiny
+ruter jest sprytny tródno go oszukać i rozpoznaje komputery (wszystkie)
+
+*Swich (przełącznik siecowy) <- serce sieci domowej; są one połączone z ruterami, nie można ich rozdzielac, tonie jest dobry pomysł; swiche ma ją porty coś tam; swich'e przemysłowe mają bardzo dużo portów (kable Erhernetowe one tam z tego wychodzą, wchodzą); ruter zawiera swich'e, raczej łaczymy drogo radiową, tajk jest najlepiej, noż przez kable
+Kale koncentryczne <- na początku były uzywane, przez taki kabel leci sygnał
+
+MUX:
+analogowy; cyfrowy <- ruzne coś tam z telewizorem; antenka przyczepimy nakierowujemy na cos tam i odbieramy programy i oglądamy se telewizor
+ruter swiatłowodowy
+
+Praca domowa
+#adres sprzętowy(adres MAC), adtes IP prywatny, sprawdzić adres IP publiczny, adres IP bramy(trasy), z kąd mamy sygnał w telewizoże (Dekoder Polsatu) ale jeśli jest kablówka lub Internet, jaki mam ruter?(nazwa producenta, lub usługodawcy), ile gniazd Erhernet ma ruter i czy ma gniazdo onaczone WAN, wydaj polecenie w terminalu tracert i ipconfig /all
+
+*Internet rzeczowy <- dowona rzeczy przez którąbyśmy chcieli miećinetrnat gdziekolwiek (czujniki)
+ IPv4 nie starcza już nam wić teraz jest IPv6 on ma 128 bitów, inplementacja rodzinna (strasznie dlugie liczby) (ta wersja IPv6 jest dopiero wdrażana, projektanci sobie wymyśłili że nie będzie potrzeba sieć LAM prywatna)
+
+ *model OSI <- który prubije wyjaśnij w jaki sposub poszczególne sieci ze sobą sie kontaktują
+
+ ramki Erhernet
+
+ *najwarzniejszym protokołem w warstwie transportowej jest protokół TCP(!! pamietać, to poctawa)
+ nawiązywanie połączenia (gadasz -> moge gadać -> do gadamy)
+ Mechanizm TCP sprawdza czy wszystkie "paczki" dochodzą tam gdzie miały dojść. nie dochodzą one pokolei i czasami się gubią
+
+ * wsystemie Windows CMD ipconfig(wpisz e w google i zobacz pbrazki)
+ te polecenia poniżej są do Windowsa
+ ipconfig /all  <- w terminalu (pokazuje wszystkie informacje w tam tekstowos wlp <- wifi droga radiowa i coś tam)
+ !! wydaj to polecenie-> tracert (z ang. ślad) rutery cos tam sie powinno pojawić ale jest troche blokowane przed hakerami(ale my w domku powinniśmy coś zoabczyć)
+
